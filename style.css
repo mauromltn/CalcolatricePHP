@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.calcolatrice {
+    width: 300px;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display */
+.display {
+    height: 80px;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Tastiera */
+.tastiera {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.riga {
+    display: flex;
+    gap: 10px;
+}
+
+/* Bottoni */
+button {
+    flex: 1;
+    height: 60px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Bottoni speciali */
+button.arancione {
+    background-color: #ff9500;
+}
+
+button.arancione:hover {
+    background-color: #e08a00;
+}
+
+button.grigio {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+button.grigio:hover {
+    background-color: #999;
+}
+
+button.grande {
+    flex: 2;
+    border-radius: 30px;
+}
