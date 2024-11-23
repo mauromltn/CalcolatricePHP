@@ -20,20 +20,30 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Display */
-.display {
+/* Contenitore del display */
+.display-container {
     height: 80px;
     background-color: #1c1c1c;
-    color: white;
-    font-size: 2.5em;
-    text-align: right;
-    padding: 20px;
     border-radius: 10px;
     margin-bottom: 15px;
-    box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Display (input) */
+#display {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 2.5em;
+    color: white;
+    text-align: right;
+    outline: none;
+    cursor: default;
+    font-family: "Arial", sans-serif;
 }
 
 /* Tastiera */
