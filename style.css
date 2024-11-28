@@ -4,28 +4,30 @@
     padding: 0;
 }
 body {
-    font-family: system-ui, Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #121212;
+    background-color: #fff;
 }
 
 .calcolatrice {
     width: 300px;
-    background-color: #000;
+    padding: 70px 15px 15px;
+    background-color: rgba(0, 0, 0, .7);
     border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .7);
 }
 
 /* Contenitore del display */
 .display-container {
     height: 80px;
-    background-color: #1c1c1c;
+    background-color: none;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: -10px;
+    margin-right: -10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -63,17 +65,11 @@ button {
     flex: 1;
     height: 60px;
     font-size: 1.5em;
-    font-weight: bold;
     color: white;
-    background-color: #333;
+    background-color: #777;
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #555;
 }
 
 /* Bottoni speciali */
@@ -86,8 +82,7 @@ button.arancione:hover {
 }
 
 button.grigio {
-    background-color: #a5a5a5;
-    color: black;
+    background-color: #999;
 }
 
 button.grigio:hover {
