@@ -16,9 +16,8 @@
             <!-- Tastiera -->
             <div class="tastiera">
                 <div class="riga">
-                    <button type="button" class="grigio" onclick="cancella()">AC</button>
-                    <button type="button" class="grigio" onclick="aggiungiSimbolo('+/-')">+/-</button>
-                    <button type="button" class="grigio" onclick="aggiungiSimbolo('%')">%</button>
+                    <button type="button" class="grande2" onclick="cancella()">AC</button>
+                    <button type="button" class="grigio" onclick="cancellaUltima()">⌫</button>
                     <button type="button" class="arancione" onclick="aggiungiSimbolo('÷')">÷</button>
                 </div>
                 <div class="riga">
@@ -46,7 +45,7 @@
                 </div>
             </div>
         </form>
-        <div id="errore"></div>
+        <div id="errore" style="color: red;"></div>
     </div>
     <script src="script.js"></script>
 </body>
